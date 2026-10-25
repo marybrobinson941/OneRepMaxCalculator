@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rank Finder Settings</title>
+<link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="icons/icon128.png" alt="" class="logo">
+      <div>
+        <h1>Google Rank Finder</h1>
+        <p>Your websites, search settings and recent rankings in one place.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2><span class="dot"></span>Your websites</h2>
+      <p class="help">Every <b>Find rank</b> search looks for all of these at once. Subdomains and <code>www.</code> count automatically.</p>
+      <form id="addForm" class="add">
+        <input id="newSite" placeholder="e.g. repmaxcalculator.one" autocomplete="off">
+        <button type="submit" class="btn">Add website</button>
+      </form>
+      <ul id="sites" class="chips"></ul>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span>Search settings</h2>
+      <div class="grid">
+        <label>Default keyword
+          <input id="query" placeholder="one rep max calculator" autocomplete="off">
+        </label>
+        <label>Stop after
+          <select id="max">
+            <option value="50">50 results</option>
+            <option value="100">100 results</option>
+            <option value="200">200 results</option>
+            <option value="300">300 results</option>
+          </select>
+        </label>
+        <label>Google site used by the popup
+          <select id="gdomain"></select>
+        </label>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="always">
+        <span class="slider"></span>
+        Highlight my websites in green on every Google search, not only during Find rank
+      </label>
+      <p id="saved" class="saved">Saved</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span>Last check</h2>
+      <div id="last" class="help">No check yet.</div>
+      <details id="countedWrap" hidden>
+        <summary>Show every result that was counted</summary>
+        <ol id="counted"></ol>
+      </details>
+    </section>
+
+    <section class="card">
+      <div class="row-between">
+        <h2><span class="dot"></span>History</h2>
+        <button id="clear" class="btn ghost">Clear history</button>
+      </div>
+      <table>
+        <thead><tr><th>Rank</th><th>Website</th><th>Keyword</th><th>When</th></tr></thead>
+        <tbody id="history"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

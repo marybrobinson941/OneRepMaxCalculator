@@ -1,0 +1,29 @@
+body { width: 330px; margin: 0; font: 13px/1.4 "Segoe UI", Roboto, Arial, sans-serif; color: #1f2340; background: #f4f6fc; }
+header { display: flex; align-items: center; gap: 10px; padding: 14px 14px 26px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 55%, #00c6a7 100%); color: #fff; }
+header img { width: 30px; height: 30px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,.25); }
+h1 { flex: 1; font-size: 16px; margin: 0; }
+.gear { background: rgba(255,255,255,.2); color: #fff; border: 0; border-radius: 10px; width: 32px; height: 32px; font-size: 17px; cursor: pointer; }
+.gear:hover { background: rgba(255,255,255,.32); }
+main { margin: -14px 10px 12px; background: #fff; border-radius: 16px; padding: 14px; box-shadow: 0 8px 24px rgba(37,117,252,.12); }
+h2 { font-size: 12px; margin: 14px 0 6px; color: #6b7190; text-transform: uppercase; letter-spacing: .5px; }
+label { display: block; margin-bottom: 10px; font-weight: 600; font-size: 12px; color: #6b7190; }
+input, select, textarea { display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px 10px;
+  border: 1.5px solid #e7e9f3; border-radius: 10px; font: 13px inherit; font-family: inherit; color: #1f2340; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: #2575fc; box-shadow: 0 0 0 3px rgba(37,117,252,.15); }
+textarea { resize: vertical; }
+.sub { font-weight: normal; color: #9aa0b8; }
+.row { display: flex; gap: 8px; margin-top: 4px; }
+button#find, button#stop { flex: 1; padding: 10px; border: 0; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 13px; }
+button#find { color: #fff; background: linear-gradient(135deg, #6a11cb, #2575fc); box-shadow: 0 5px 14px rgba(106,17,203,.3); }
+button#stop { background: #f0f2fa; color: #c5221f; }
+.hint { color: #6b7190; font-size: 11.5px; margin: 10px 0 0; }
+#status { margin-top: 10px; padding: 9px 10px; border-radius: 10px; background: #f0f2fa; display: none; }
+#status.show { display: block; }
+#status.ok { background: #e6f4ea; color: #0b8043; }
+#status.warn { background: #fef7e0; color: #b06000; }
+ul { list-style: none; padding: 0; margin: 0; max-height: 150px; overflow: auto; }
+li { padding: 5px 0; border-bottom: 1px solid #f0f2fa; font-size: 12px; }
+li b { color: #0b8043; }
+li .nf { color: #b06000; font-weight: bold; }
+.muted { color: #9aa0b8; }

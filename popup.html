@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="">
+    <h1>Google Rank Finder</h1>
+    <button id="settings" class="gear" title="Settings">⚙</button>
+  </header>
+  <main>
+    <label>Your websites <span class="sub">(one per line)</span>
+      <textarea id="domains" rows="3" placeholder="repmaxcalculator.one&#10;example.com"></textarea>
+    </label>
+    <label>Keyword
+      <input id="query" placeholder="one rep max calculator" autocomplete="off">
+    </label>
+    <label>Stop after
+      <select id="max">
+        <option value="50">50 results</option>
+        <option value="100" selected>100 results</option>
+        <option value="200">200 results</option>
+        <option value="300">300 results</option>
+      </select>
+    </label>
+    <div class="row">
+      <button id="find">Find rank</button>
+      <button id="stop" class="secondary">Stop</button>
+    </div>
+    <p class="hint">Or type a search on Google and click the <b>Find rank</b> button next to Google's search button. Plain searches are never affected.</p>
+    <div id="status"></div>
+    <h2>Recent checks</h2>
+    <ul id="history"><li class="muted">None yet</li></ul>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
